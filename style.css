@@ -1,11 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
+/* Main-navbar */
 
+#main-Section {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+header {
+  padding: 50px 0;
+}
+
+header .navbar-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+}
+@media only screen and (max-width: 1100px) {
+  .navbar-container {
+    width: 100%;
+  }
+}
+.navbar-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.navbar-container nav {
+  display: block;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav-list-item a {
+  padding: 15px 30px;
+  font-size: 15px;
+  color: hsl(257, 7%, 63%);
+  text-decoration: none;
+}
+.right {
+  margin-left: auto;
+}
+#sign-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 28px;
+  background: hsl(180, 66%, 49%);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content */
+.mainInner {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  align-items: center;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-position: center right -40px;
+}
+.main-content {
+  width: 90%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1100px) {
+  .main-content {
+    width: 100%;
+  }
+}
+
+.left-half {
+    position: relative;
+    width: 965px;
+    max-width: 100%;
+    z-index: 1;
+}
+.left-half h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    color: hsl(257, 27%, 26%);
+}
+.left-half p {
+    font-size: 22px;
+    color: hsl(257, 7%, 63%);
+    margin-bottom: 20px;
+}
+.started-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background: hsl(180, 66%, 49%);
+    color: #fff;
+    border-radius: 28px;
+    text-decoration: none;
+}
+
+.right-half {
+    position: absolute;
+    width: min-content;
+    max-width: 45%;
+    right: -30px;
+    top: 0;
+}
