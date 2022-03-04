@@ -291,7 +291,7 @@ footer {
 }
 .footer-content {
   display: grid;
-  grid-template-columns: 1fr auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   grid-column-gap: 60px;
 }
 @media only screen and (max-width: 800px) {
@@ -341,4 +341,7 @@ footer a {
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
+}
+#footer-icons img.footer-icon {
+  margin: 5px;
 }
