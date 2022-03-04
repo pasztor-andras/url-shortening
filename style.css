@@ -88,7 +88,7 @@ header .navbar-container {
 .left-half {
   position: relative;
   width: 965px;
-  max-width: 100%;
+  max-width: 60%;
   z-index: 1;
 }
 .left-half h1 {
@@ -115,7 +115,7 @@ header .navbar-container {
 .right-half {
   position: absolute;
   width: min-content;
-  max-width: 40%;
+  max-width: 50%;
   right: 70px;
   top: 0;
 }
