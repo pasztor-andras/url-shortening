@@ -203,7 +203,7 @@ header .navbar-container {
   position: relative;
 }
 
-#cards ::before {
+#cards::before {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -307,8 +307,8 @@ footer {
   }
 }
 
-.footer-logo {
-  color: #fff;
+.footer-logo img {
+  fill: #fff;
 }
 
 footer h3 {
